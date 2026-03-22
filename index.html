@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* Animation */
+@keyframes swipeup {
+    from {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Headline */
+h1 {
+    font-size: 4rem;
+    margin-top: 50px;
+    animation: swipeup 1.5s ease-in 0.5s forwards;
+}
+
+p {
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    animation: swipeup 1.5s ease-in 1s forwards;
+}
+
+/* Image */
+.image img {
+    width: 250px;
+    margin-top: 30px;
+    animation: swipeup 1.5s ease-in 1.5s forwards;
+}
+
+/* Dua text */
+.dua {
+    max-width: 700px;
+    font-size: 1.3rem;
+    margin: 40px auto;
+    line-height: 1.8;
+    animation: swipeup 1.5s ease-in 2s forwards;
+}
+
+/* Names list */
+ul {
+    list-style: none;
+    font-size: 1.2rem;
+    margin: 20px;
+    animation: swipeup 1.5s ease-in 2.5s forwards;
+}
+
+li {
+    margin: 10px 0;
+}
+
+/* Button */
+button.btn {
+    margin-top: 50px;
+    width: 200px;
+    height: 60px;
+    font-size: 18px;
+    animation: swipeup 1.5s ease-in 3s forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #3D3B3C;
+    font-weight: 600;
+}
+
+button.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00fffb;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <h1>EID MUBARAK
+        <p>My Dear  Classmates and  Friends</p>
+    </h1>
+    
+    <span class="image">
+        <img src="—Pngtree—eid moon and light_15158830.png" alt="png">
+    </span>
+    <div class="dua">
+        🌙✨ Eid Mubarak to all my dear friends and classmates!<br>
+May this special day bring peace, joy, and countless blessings.<br>
+Let’s celebrate with love, laughter, and cherished memories together.<br>
+Wishing you happiness and success always—Eid Mubarak! 💫
+    </div>
+    <div class="specialname">
+        <ul>
+            <li>Burhan</li>
+            <li>Abu Bakar</li>
+            <li>Abdul Hameed</li>
+            <li>Tanzeela</li>
+            <li>Samad</li>
+        </ul>
+        <ul id="alag">
+            <li>Hsnain Sami</li>
+            <li>Muhib</li>
+            <li>Rafay</li>
+            <li>Abdullah</li>
+            <li>Hamza</li>
+        </ul>
+    </div>
+    <!-- From Uiverse.io by kleenpulse --> 
+<button class="btn" onclick="alert('Eid Mubarak From Murtaza')">Click me </button>
+
+</body>
+</html>
